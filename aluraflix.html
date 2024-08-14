@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALURAFLIX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dfdfdf;
+        }
+
+        header {
+            background-color: #e42fcc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav {
+            background-color: #791383;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .nav a:hover {
+            color: #ccc;
+        }
+
+        .conteudo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .filme {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .filme img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .filme h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .filme p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .filme a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .filme a:hover {
+            color: #555;
+        }
+
+        /* Adiciona efeitos de hover nos filmes */
+        .filme:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CÁTALOGO</h1>
+    </header>
+    <nav class="nav">
+        <a href="#">AÇÃO</a>
+        <a href="#">COMÉDIA</a>
+        <a href="#">DRAMA</a>
+        <a href="#">TEROR</a>
+        <a href="#" class="search">PESQUISAR</a>
+    </nav>
+    <main class="conteudo">
+        <section class="filme">
+            <a href="https://youtu.be/rrldTQU6ct0?si=KUmkUgEz5dQLI_9p" target="_blank">
+                <img src="filme1.jpg" alt="Filme 1">
+                <h2>Bob Esponja Calça Quadrada</h2>
+                <p>"É uma série animada sobre Bob Esponja, uma esponja otimista que vive no fundo do mar e trabalha no restaurante Siri Cascudo. Ele tem amigos excêntricos e vive aventuras engraçadas na Fenda do Biquíni."</p>
+            </a>
+        </section>
+        <section class="filme">
+            <a href="https://www.youtube.com/watch?v=ld88EITjguQ&pp=ygUScG9wcHkgZG9ncyBkZXNlbmhv" target="_blank">
+                <img src="filme2.jpg" alt="Filme 2">
+                <h2>Bingo e Rolly</h2>
+                <p>"É uma série animada que segue os irmãos cachorros Bingo e Rolly em suas aventuras pelo bairro. Eles são curiosos e destemidos, enfrentando desafios e resolvendo problemas enquanto exploram e se divertem."</p>
+            </a>
+        </section>
+        <section class="filme">
+            <a href="https://www.youtube.com/watch?v=F4ZevjMuB0s&pp=ygUSc2Nvb2J5IGRvbyBkZXNlbmhv" target="_blank">
+                <img src="filme3.jpg" alt="Filme 3">
+                <h2>Scooby-Doo</h2>
+                <p>"É uma série animada que acompanha Scooby-Doo, um cão da raça dogue alemão, e seus amigos, Fred, Daphne, Velma e Shaggy, enquanto resolvem mistérios envolvendo fantasmas e monstros. Juntos, eles desmascaram vilões que se escondem por trás de disfarces assustadores."</p>
+            </a>
+        </section>
+    </main>
+</body>
+</html>
